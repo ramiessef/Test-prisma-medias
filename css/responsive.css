@@ -1,0 +1,84 @@
+@media (max-width: 992px) {
+    #responsive-menu {
+        display: block;
+    }
+
+    nav label,
+    #responsive-menu {
+        display: block;
+    }
+
+    nav ul {
+        font-size: 1.5em;
+        list-style: none;
+        margin: 0;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav input:checked~ul {
+        margin: 1em;
+        max-height: inherit;
+        opacity: 1;
+    }
+
+    nav input[type=checkbox]:checked+label #menu-icon {
+        background: transparent;
+        float: left;
+    }
+
+    nav input[type=checkbox]:checked+label #menu-icon:before {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    nav input[type=checkbox]:checked+label #menu-icon:after {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+    nav ul li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .blocThree img {
+        float: none;
+        display: block;
+        margin: 0 auto 17px;
+    }
+
+    nav {
+        min-height: 42px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .blocOne p {
+        font-size: 18px;
+    }
+
+    .blocOne h3 {
+        margin-bottom: 22px;
+    }
+
+    .blocOne {
+        padding: 40px 0 80px;
+        text-align: center;
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 26px;
+    }
+
+    .blocThree img {
+        width: 100%;
+    }
+}
